@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <title>File Metadata</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+     <div class="container">
+      <div class="well" style="margin-top:70px;">
+        <div class="text-center">
+        <h2>API Project: File Metadata Microservice</h2>
+        <h3>User Stories:</h3>
+      </div>
+        <div style="margin-left: 180px;">
+          <p>1. I can submit a form object that includes a file upload.</p>
+          <p>2. The from file input field  has the "name" attribute set to "upfile". We rely on this in testing.</p>
+          <p>3. When I submit something, I will receive the file name, and size in bytes within the JSON response.</p>
+        </div>
+        <h3 style="margin-top:-10px;" class="text-center">Usage:</h3>
+        <h5 class="text-center">Please Upload a File ...</h5>
+        <div class="view">
+          <h4 id="output"></h4>
+          <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse" class="text-center">
+            <input id="inputfield" type="file" name="myfile" style="margin-left: 450px; margin-top:20px; color: red;">
+            <input id="button" type="submit" value="Upload" class="btn btn-success" style="margin-top:20px;">
+          </form>
+        </div>
+      </div>
+      <div class="footer text-center">
+        <p>
+          by
+          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
+        </p>
+      </div>
+    </div>
+   </body>
+</html>
