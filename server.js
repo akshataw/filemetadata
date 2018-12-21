@@ -20,7 +20,7 @@ app.get('/hello', function(req, res){
 });
 
 app.route('/api/fileanalyse')
-.post(upload.single('myfile'),(req, res) => {
+.post(upload.single('upfile'),(req, res) => {
   res.json({
     name: req.file.originalname,
     type: req.file.mimetype,
@@ -28,6 +28,6 @@ app.route('/api/fileanalyse')
   })
 });
 
-var listener = app.listen(process.env.PORT || 4100, function () {
+var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
